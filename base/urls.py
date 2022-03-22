@@ -20,5 +20,6 @@ from base import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('messages/', views.messages_list)
+    path('messages/', views.messages_list),
+    path('messages/<int:id>', views.message_detail)
 ]
